@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //değişkenleri tanımla 
+            var r,alan,cevre,pi=3.14;
+
+            //yarıçapı al
+            r=Number(prompt("Yarıçap:"));
+
+            //yarıçap sorgulama / işlem
+            if(r<=0)
+                alert("r pozitif olmalı!!! F5 ile yeni r alın...");
+            else
+            {
+                alan=pi*r*r;
+                cevre=2*pi*r;
+                alert("Alan="+alan+" Çevre="+cevre);
+            }
+        </script>
+    </body>
+</html>

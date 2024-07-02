@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //sınıf oluştur
+            class Daire{
+                constructor(yaricap){
+                    this.yaricap=yaricap;
+                }
+                alan(){
+                    return 3.14*this.yaricap*this.yaricap;
+                }
+                cevre(){
+                    return 2*3.14*this.yaricap;
+                }
+            }
+
+            //nesne oluştur
+            var r1=Number(prompt("r1:"));
+            var d1=new Daire(r1);
+            document.write("alan="+d1.alan()+" çevre="+d1.cevre());
+
+             //nesne oluştur
+             var r2=Number(prompt("r2:"));
+            var d2=new Daire(r2);
+            document.write("alan="+d2.alan()+" çevre="+d2.cevre());
+        </script>
+    </body>
+</html>

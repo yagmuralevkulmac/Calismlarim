@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Form ile Throw uygulaması</h2>
+        <form>
+            Ders Notu:<input type="text" id="dersnotu"><br>
+            <input type="button" value="kontrol et" onclick="kontrol()">
+        </form>
+        <p id="hatailetisi"></p>
+        <p id="girilendeger"></p>
+        <script>
+            function kontrol(){
+                var dersnotu, hatailetisi;
+                // önceki hata iletisini silelim
+                hatailetisi=document.getElementById("hatailetisi");
+                hatailetisi.innerHTML="";
+
+                //ders notunu alalım
+                dersnotu=document.getElementById("dersnotu").value;
+
+                //hata denetimi yapalım
+                try{
+                    if(dersnotu == "") throw "ders notu girilmemiş";
+                    if(isNaN(dersnotu)) throw "sayısal değer girilmemiş";
+                    dersnotu=Number(dersnotu);
+                    if(dersnotu<0 || dersnotu>10) throw "ders notu 0-10 arası olmalı";
+                }
+                //hatayı yakala ve yazdır
+                catch(err){
+                    hatailetisi.innerHTML="hata:"+err;
+                }
+                //hata olsa da olmasa da aşağıdaki kodlar çalışsın
+                //girilen değer yazdırılsın
+                finally{
+                    document.getElementById("girilendeger").innerHTML="girilen değer:"+dersnotu;
+                }
+            }
+        </script>
+    </body>
+</html>

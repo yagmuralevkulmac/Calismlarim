@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Öğreniyorum :)</title>
+        <style>
+            body{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: seagreen;
+                font-weight: bold;
+            }
+            #formkutusu{
+                border: darkorchid solid 2px;
+                border-radius: 10px;
+                background-color: darksalmon;
+                padding: 20px;
+            }
+            input{
+                border: darkolivegreen solid 2px;
+                color: darkolivegreen;
+                padding: 5px;
+                margin: 5px;
+                background-color: pink;
+            }
+            input:focus{
+                background-color: powderblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="formkutusu">
+            <form>
+                <table>
+                    <tr><td>Ad Soyad:</td><td><input type="text"></td></tr>
+                    <tr><td>Yaş:</td><td><input type="number"></td></tr>
+                    <tr><td><input type="submit"></td><td><input type="reset"></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

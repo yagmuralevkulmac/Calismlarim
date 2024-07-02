@@ -1,0 +1,111 @@
+/* style.css */
+
+body{
+    background-color: plum;
+}
+
+h1{
+    color: seagreen;
+    font-size: 16px;
+}
+
+h2{
+    color: darkorchid;
+    font-size: 14px;
+}
+
+#ff {
+    color: maroon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+#bb {color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ilk{
+    font-style: italic;
+}
+
+.times{
+    font-family: 'Times New Roman', Times, serif;
+}
+p.mavi{color: blue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+p.yesil{color: darkgreen;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+p.red{color: red;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+p{
+    background-color: rgb(80, 221, 109);
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#yazı{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: seagreen;
+    border: blue solid 5px; 
+    border-collapse: collapse;
+}
+th{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: bisque;
+    background-color: rgb(223, 8, 8);
+}
+td{
+    color: rgb(169, 103, 95);
+    background-color: skyblue;
+    border: slateblue dashed 2px;
+}
+
+#formkutusu{
+    border: darkorchid solid 2px;
+    border-radius: 10px;
+    background-color: darksalmon;
+    padding: 20px;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:link{
+    color: grey;
+}
+
+a:visited{
+    color: indigo;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{color: red;}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    border: olivedrab solid 3px;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: orange;
+}

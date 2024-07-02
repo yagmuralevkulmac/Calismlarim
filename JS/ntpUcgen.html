@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //sınıfı tanımla
+            class Ucgen{
+                static genislik=0;
+                static yukseklik=0;
+                alan(){
+                    return(this.genislik*this.yukseklik)/2;
+                }
+            }
+
+            //nesne oluştur 
+            var u1=new Ucgen();
+            u1.genislik=1;
+            u1.yukseklik=2;
+            document.write("u1 alan="+u1.alan());
+
+            //nesne oluştur
+            document.write("<br>");
+            var u2=new Ucgen();
+            u2.genislik=Number(prompt("u2 genişlik:"));
+            u2.yukseklik=Number(prompt("u2 yükseklik:"));
+            document.write("u2 alanı="+u2.alan());
+        </script>
+    </body>
+</html>
